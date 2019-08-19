@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "karma start",
-    "dev": "ts-node src/index.ts",
+    "dev": "nodemon -r dotenv/config src/index.ts",
     "build": "webpack -p"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^3.4.0",
+    "@types/mongodb": "^3.2.3",
+    "dotenv": "^8.1.0",
     "jasmine-core": "^3.4.0",
     "karma": "^4.2.0",
     "karma-chrome-launcher": "^3.1.0",

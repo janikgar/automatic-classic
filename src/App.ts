@@ -1,5 +1,6 @@
 import express from 'express';
 import router from './controller/routes';
+import './model/data';
 
 class App {
     public app: express.Application;
